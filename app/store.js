@@ -1,11 +1,10 @@
 import Snack from "./Models/Snack.js";
 
 let _state = {
-  activeValue: new Value({ title: "Value" }),
-  /** @type {Value[]} */
-  values: []
+  /** @type {Snack} */
+  snack: new Snack('Lara Bar', "//placehold.it/100x100", 2, 'Natural energy bar')
 };
-// comment
+
 class Store {
   /**
    * Provides access to application state data
@@ -13,6 +12,8 @@ class Store {
   get State() {
     return _state;
   }
+
+
 }
 
 const STORE = new Store();

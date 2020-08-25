@@ -1,7 +1,22 @@
 import SnacksService from "../Services/SnacksService.js";
 import STORE from "../store.js";
 
-//Public
-export default class ValuesController {
-  constructor() {}
+// PRIVATE
+function _drawSnack() {
+  let snack = STORE.State.snack
+  document.getElementById('snack').innerHTML = snack.Template
+}
+
+
+// PUBLIC
+export default class SnacksController {
+  constructor() {
+    _drawSnack()
+  }
+
+  buy() {
+    snacksService.buy()
+    _drawSnack()
+  }
+
 }
