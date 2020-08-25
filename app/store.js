@@ -2,9 +2,13 @@ import Snack from "./Models/Snack.js";
 
 let _state = {
   /** @type {Snack} */
-  snack: new Snack("//placehold.it/100x100", 'Lara Bar', 2, 'Natural energy bar'),
-  snack: new Snack("//placehold.it/100x100", 'Twizzlers', 2, 'Tangy licorice candy'),
-  snack: new Snack("//placehold.it/100x100", 'Smartfood', 2, 'White cheddar popcorn')
+  // make snacks an array
+  snacks: [
+    new Snack ("//placehold.it/100x100", 'Lara Bar', 2, 'Natural energy bar'),
+    new Snack ("//placehold.it/100x100", 'Twizzlers', 2, 'Tangy licorice candy'),
+    new Snack ("//placehold.it/100x100", 'Smartfood', 2, 'White cheddar popcorn')
+  ],
+  change: 1
 };
 
 class Store {

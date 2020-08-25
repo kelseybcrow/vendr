@@ -5,15 +5,11 @@ class SnacksService {
     console.log("Creating Snacks Service", STORE)
   }
   buy() {
-    // let rnd = Math.random()
-    let snack = STORE.State.snack
-    let userMoney = 0
-      if (userMoney >= snack.price) {
-        snack.buy++
-        alert('Thanks for purchasing!')
-      } else {
-        alert('Sorry, you are lacking the funds.')
-      }
+    let change = STORE.State.change
+    let snackPrice = STORE.State.snacks.price
+    if (change >= snackPrice) {
+
+    }
   }
 }
 

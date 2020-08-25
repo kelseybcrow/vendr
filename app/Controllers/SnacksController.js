@@ -3,8 +3,13 @@ import STORE from "../store.js";
 
 // PRIVATE
 function _drawSnack() {
-  let snack = STORE.State.snack
-  document.getElementById('snack').innerHTML = snack.Template
+  // make this a loop so I draw each snack
+  let template = ''
+  let snacks = STORE.State.snacks
+  snacks.forEach(snack => {
+    template += snack.Template
+  });
+  document.getElementById('snack').innerHTML = template
 }
 
 

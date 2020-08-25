@@ -1,9 +1,9 @@
 export default class Snack {
 
     constructor(img, name, price, description) {
-      this.img = img
+        this.img = img
         this.name = name
-        this.price = 0
+        this.price = price
         this.description = description
 
         console.log("Made a new snack", name)
