@@ -2,7 +2,9 @@ import Snack from "./Models/Snack.js";
 
 let _state = {
   /** @type {Snack} */
-  snack: new Snack('Lara Bar', "//placehold.it/100x100", 2, 'Natural energy bar')
+  snack: new Snack("//placehold.it/100x100", 'Lara Bar', 2, 'Natural energy bar'),
+  snack: new Snack("//placehold.it/100x100", 'Twizzlers', 2, 'Tangy licorice candy'),
+  snack: new Snack("//placehold.it/100x100", 'Smartfood', 2, 'White cheddar popcorn')
 };
 
 class Store {

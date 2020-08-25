@@ -1,8 +1,8 @@
 export default class Snack {
 
-    constructor(name, img, description) {
+    constructor(img, name, price, description) {
+      this.img = img
         this.name = name
-        this.img = img
         this.price = 0
         this.description = description
 
@@ -23,9 +23,9 @@ export default class Snack {
         // debugger
         return `
         <div class="card">
-          <img class="card-img-top" src="${this.name}" alt="">
+          <img class="card-img-top" src="${this.img}" alt="">
           <div class="card-body">
-              <h4 class="card-title">${this.img}</h4>
+              <h4 class="card-title">${this.name}</h4>
               <p class="card-text">${this.price}</p>
               <p class="card-text">${this.description}</p>
               <button onclick="app.SnacksController.buy()" >Buy Now</button>

@@ -2,8 +2,8 @@ import STORE from "../store.js";
 
 class SnacksService {
   constructor() {
+    console.log("Creating Snacks Service", STORE)
   }
-  console.log("Creating Snacks Service", STORE)
   buy() {
     // let rnd = Math.random()
     let snack = STORE.State.snack
@@ -14,6 +14,7 @@ class SnacksService {
       } else {
         alert('Sorry, you are lacking the funds.')
       }
+  }
 }
 
 const SERVICE = new SnacksService();

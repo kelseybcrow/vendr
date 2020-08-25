@@ -1,4 +1,4 @@
-import SnacksService from "../Services/SnacksService.js";
+import snacksService from "../Services/SnacksService.js";
 import STORE from "../store.js";
 
 // PRIVATE
