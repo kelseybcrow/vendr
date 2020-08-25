@@ -5,7 +5,7 @@ let _state = {
   /** @type {Value[]} */
   values: []
 };
-
+// comment
 class Store {
   /**
    * Provides access to application state data
