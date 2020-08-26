@@ -4,11 +4,11 @@ class SnacksService {
   constructor() {
     console.log("Creating Snacks Service", STORE)
   }
-  buy() {
+  buy(snackPrice) {
     let change = STORE.State.change
-    let snackPrice = STORE.State.snacks.price
     if (change >= snackPrice) {
-
+      STORE.State.change -= snackPrice
+      console.log(STORE.State.change)
     }
   }
 }

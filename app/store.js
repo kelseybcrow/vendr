@@ -8,7 +8,7 @@ let _state = {
     new Snack ("//placehold.it/100x100", 'Twizzlers', 2, 'Tangy licorice candy'),
     new Snack ("//placehold.it/100x100", 'Smartfood', 2, 'White cheddar popcorn')
   ],
-  change: 1
+  change: 5
 };
 
 class Store {

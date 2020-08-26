@@ -19,8 +19,8 @@ export default class SnacksController {
     _drawSnack()
   }
 
-  buy() {
-    snacksService.buy()
+  buy(price) {
+    snacksService.buy(price)
     _drawSnack()
   }
 

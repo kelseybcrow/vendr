@@ -9,16 +9,6 @@ export default class Snack {
         console.log("Made a new snack", name)
       }
 
-    //   moodString() {
-    //     if (this.mood > this.tollerance) {
-    //       return "happy"
-    //     }
-    //     if (this.mood > 0) {
-    //       return "meh"
-    //     }
-    //     return "Bitey"
-    //   }
-
       get Template() {
         // debugger
         return `
@@ -28,7 +18,7 @@ export default class Snack {
               <h4 class="card-title">${this.name}</h4>
               <p class="card-text">${this.price}</p>
               <p class="card-text">${this.description}</p>
-              <button onclick="app.SnacksController.buy()" >Buy Now</button>
+              <button onclick="app.snacksController.buy(${this.price})" >Buy Now</button>
           </div>
         </div>
 
